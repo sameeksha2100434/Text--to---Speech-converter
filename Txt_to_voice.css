@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #010758, #490d61);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; 
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff2963;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px; 
+    background: #403d84;
+    color: #fff;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between elements */
+}
+
+button {
+    background: #ff2963;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+select {
+    flex: 1;
+    max-width: 200px;
+    height: 50px;
+    color: #fff;
+    background: #403d84;
+    padding: 0 30px 0 20px; 
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url('https://clipart-library.com/new_gallery/382-3829213_transparent-social-impact-drop-down-arrow-white.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 15px); 
+    background-position-y: 50%;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+}
